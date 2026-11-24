@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Praveen Raj Thulasi S</title>
+  <meta name="description" content="Resume of Praveen Raj Thulasi S — Full Stack Developer, AI Engineer and Cloud Computing Engineer.">
+  <style>
+    :root {
+      --bg: #ffe9cf;
+      --ink: #270f03;
+      --muted: #5a4636;
+      --accent: #ffe600;
+      --pink: #ff5277;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    a { color: var(--ink); }
+    .resume-card {
+      background: var(--card);
+      border: 3.5px solid #000;
+      box-shadow: 8px 8px 0 #000;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 3rem 2.75rem;
+    }
+    .topbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.75rem; }
+    .badge {
+      display: inline-block;
+      background: #0d0d0d;
+      color: var(--accent);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.1rem;
+      border: 2px solid #000;
+      font-size: 0.8rem;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--accent);
+      color: #000;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 0.7rem 1.4rem;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0 #000;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      font-size: 0.85rem;
+    }
+    .btn-back:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #000; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .headline { font-size: 1.05rem; font-weight: 700; color: var(--muted); }
+    .contact {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .contact a { text-decoration: underline; text-underline-offset: 3px; }
+    section { margin-top: 1.9rem; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: inline-block;
+      background: var(--accent);
+      border: 2.5px solid #000;
+      padding: 0.25rem 0.8rem;
+      box-shadow: 3px 3px 0 #000;
+      margin-bottom: 1rem;
+    }
+    p.summary { font-size: 1rem; }
+    .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 2rem; }
+    .skills dt { font-weight: 800; }
+    .skills dd { color: var(--muted); margin: 0 0 0.35rem; }
+    .entry { margin-bottom: 1.25rem; }
+    .entry-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.25rem 1rem; }
+    .entry-title { font-weight: 900; font-size: 1.02rem; }
+    .entry-title a { text-decoration: none; border-bottom: 2px solid var(--pink); }
+    .entry-sub { color: var(--muted); font-weight: 600; font-size: 0.92rem; }
+    .entry-date { font-weight: 800; color: var(--pink); white-space: nowrap; }
+    ul.bullets { margin: 0.4rem 0 0 1.2rem; }
+    ul.bullets li { margin-bottom: 0.3rem; }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 2px solid #000;
+      background: #fff8ea;
+      padding: 0.1rem 0.5rem;
+      margin: 0.15rem 0.2rem 0 0;
+    }
+    .cert-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem 2rem; }
+    .cert-list li::before { content: "■ "; color: var(--pink); }
+    .edu-entry + .edu-entry { margin-top: 0.9rem; }
+    @media (max-width: 640px) {
+      .resume-card { padding: 1.75rem 1.25rem; }
+      .skills, .cert-list { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .resume-card { box-shadow: none; border: none; max-width: none; }
+      .topbar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume-card">
+    <div class="topbar">
+      <span class="badge">Curriculum Vitae</span>
+      <a href="index.html" class="btn-back">← Back to Portfolio</a>
+    </div>
+
+    <header>
+      <h1>Praveen Raj Thulasi S</h1>
+      <p class="headline">Aspiring AI, Cloud and Java Full Stack Developer</p>
+      <nav class="contact" aria-label="Contact">
+        <span>Thanjavur, Tamil Nadu</span>
+        <span>+91-6383396588</span>
+        <a href="mailto:praveenrajthulasioff@gmail.com">praveenrajthulasioff@gmail.com</a>
+        <a href="https://www.linkedin.com/in/praveen-raj-thulasi-s/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Praveen-Raj-Thulasi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">Aspiring AI, Cloud, and Java Full Stack Developer skilled in Java, Spring Boot, React, and AWS. Experienced in building scalable web applications, RESTful APIs, and AI-powered solutions, with a strong foundation in data structures, algorithms, and cloud technologies.</p>
+    </section>
+
+    <section>
+      <h2>Skills &amp; Technical Expertise</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Java, C, JavaScript, SQL</dd></div>
+        <div><dt>Tools</dt><dd>Postman, VS Code, GitHub, Vercel</dd></div>
+        <div><dt>Frontend</dt><dd>React.js, HTML5, CSS3</dd></div>
+        <div><dt>AI &amp; GenAI</dt><dd>Generative AI, LLM Integration, RAG, AI Agents, MCP</dd></div>
+        <div><dt>Backend</dt><dd>Node.js, Express, Spring Boot, Hibernate</dd></div>
+        <div><dt>Core Concepts</dt><dd>DSA, OOP, OS, Computer Networks, DBMS</dd></div>
+        <div><dt>Databases</dt><dd>MySQL, MongoDB</dd></div>
+        <div><dt>Cloud &amp; DevOps</dt><dd>AWS, Docker, Kubernetes</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><a href="https://github.com/Nikhilsourav347/Agentic-Analytics-Platforms" target="_blank" rel="noopener noreferrer">Agentic Analytics Platform</a> | MCP &amp; Multi-Agent AI</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed an MCP-enabled multi-agent analytics platform using MERN to convert natural-language business queries into actionable enterprise insights.</li>
+          <li>Implemented Orchestrator, Analytics Query, Query Guardian, and Insight agents with RBAC for secure query generation, validation, and automated visualization.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><a href="https://github.com/Praveen-Raj-Thulasi/CafePOS" target="_blank" rel="noopener noreferrer">Cafinity</a> | React.js, Node.js, Express.js, PostgreSQL, Docker, AWS</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Built a cloud-native cafe management platform with QR ordering, POS, Kitchen Display System (KDS), employee management, and real-time order tracking.</li>
+          <li>Designed a scalable AWS architecture using ECS Fargate, ECR, API Gateway, CloudFront, S3, Cognito, Docker, and Terraform.</li>
+          <li>Developed RESTful APIs with Express.js, Socket.IO, JWT authentication, MongoDB, PostgreSQL, and deployed the React frontend on Vercel.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><a href="https://github.com/Praveen-Raj-Thulasi/SmartSchoolBus" target="_blank" rel="noopener noreferrer">TransitIQ</a> | React, Spring Boot, Java, MySQL, CSS, Docker, AWS, WebSocket</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Engineered a full-stack school transportation platform with real-time GPS tracking, QR/Face Recognition attendance, JWT authentication, and WebSockets using React, Spring Boot, Hibernate, and MySQL.</li>
+          <li>Implemented route optimization, emergency SOS, fare management, analytics dashboards, and parent-driver communication for efficient transportation management.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Internship</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Stack Queue Education</span>
+          <span class="entry-date">June 2025</span>
+        </div>
+        <div class="entry-sub">C Programming Intern · Salem, Tamil Nadu</div>
+        <ul class="bullets">
+          <li>Designed and implemented C programs using core data structures and algorithms.</li>
+          <li>Optimized code quality by debugging, testing, and improving program performance.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <article class="entry edu-entry">
+        <div class="entry-head">
+          <span class="entry-title">Karpagam Institute of Technology</span>
+          <span class="entry-date">2024 – 2028 (Expected)</span>
+        </div>
+        <div class="entry-sub">B.E. Electronics and Communication Engineering · CGPA: 8.33 · Coimbatore, Tamil Nadu</div>
+      </article>
+      <article class="entry edu-entry">
+        <div class="entry-head">
+          <span class="entry-title">Thamarai International School (CBSE)</span>
+          <span class="entry-date">2024</span>
+        </div>
+        <div class="entry-sub">Senior School Certificate Examination · 80.2% · Thanjavur, Tamil Nadu</div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Networking Essentials (Cisco)</li>
+        <li>Claude Certified Architect (Foundations)</li>
+        <li>AI for Bharat Hackathon</li>
+        <li>Odoo X KAHE Hackathon</li>
+        <li>Full-Stack Web Developer</li>
+        <li>MongoDB Basics for Students</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p class="summary">English (Work proficiency), Tamil (Native)</p>
+    </section>
+  </main>
+</body>
+</html>
